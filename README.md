@@ -89,11 +89,11 @@ We welcome contributions from everyone! To contribute:
 6. **Create a Pull Request:**
    Go to the original repository and click on "New Pull Request." Provide a clear description of the changes and submit it.
 
-For more detailed contribution guidelines, refer to [CONTRIBUTING.md](.Contributing/CONTRIBUTING.md) (if applicable).
+For more detailed contribution guidelines, refer to [CONTRIBUTING.md](.Contributing/CONTRIBUTING.md)  
 
 ## 📝 License
 
-This project is licensed under the [License Name] License - see the [LICENSE](./LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
 ## 📢 Upcoming Events
 
