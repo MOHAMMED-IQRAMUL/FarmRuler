@@ -11,6 +11,11 @@ This repository is a collaborative effort where we invite developers, designers,
 Our focus is on Inegrating AI and Tech In Agricultural Word and Ease the Procedure. 
 Whether you're here to contribute code, design, or just explore, there's a place for you!
 
+# Flow Diagram
+<img width="3176" alt="FarmRule-Img" src="https://github.com/user-attachments/assets/a64c5cef-d20e-4383-994f-4ea42e23ea68">
+
+  
+
 ## 🌟 Features
 
 - **Feature 1:** A Simple and Clean UI to Display Weather Conditions In Specific Regions. Create Personalizes AI bots.
