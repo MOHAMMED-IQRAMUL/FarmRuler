@@ -1,3 +1,3 @@
 # Fontend Doc of FarmRuler
 
-![alt text](FarmRule-Img-1.pn
+![alt text](FarmRule-Img-1.png)
