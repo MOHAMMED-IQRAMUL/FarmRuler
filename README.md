@@ -21,3 +21,8 @@ Whether you're here to contribute code, design, or just explore, there's a place
 | Backend Code | [Backend/README.md](Backend/README.md) |
 | Contributing | [Contributing/README.md](Contributing/README.md) |
 
+```
+After Contributing Please Add your data in    [Contributing](Contributing/README.md)
+
+Add in next availabe spot available, dont Cheat 
+```
