@@ -20,6 +20,7 @@ Whether you're here to contribute code, design, or just explore, there's a place
 | Frontend Doc | [Frontend/README.md](Frontend/README.md) |
 | Backend Code | [Backend/README.md](Backend/README.md) |
 | Contributing | [Contributing/README.md](Contributing/README.md) |
+| Project Directory | [Directory/README.md](Directory/README.md) |
 
 ```
 After Contributing Please Add your data in    [Contributing](Contributing/README.md)
