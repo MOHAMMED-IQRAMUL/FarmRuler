@@ -10,11 +10,11 @@ const PrivacyPage = () => {
             <div className="max-w-4xl mx-auto bg-white shadow-md rounded-lg p-8">
                 <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
                 <p className="mb-4">
-                    Welcome to FarmRuler! We're on a mission to build an Incredible Full-Stack Web Application Specially For Person With Interest in Agriculture and Farming. This repository is a collaborative effort where we invite developers, designers, and enthusiasts to contribute and help bring this project to life.
+                    Welcome to FarmRuler! We re on a mission to build an Incredible Full-Stack Web Application Specially For Person With Interest in Agriculture and Farming. This repository is a collaborative effort where we invite developers, designers, and enthusiasts to contribute and help bring this project to life.
                 </p>
                 <h2 className="text-2xl font-semibold mb-2">🚀 Project Overview</h2>
                 <p className="mb-4">
-                    FarmRuler aims to Ease The Agricultural Activities. Our focus is on Integrating AI and Tech In Agricultural World and Ease the Procedure. Whether you're here to contribute code, design, or just explore, there's a place for you!
+                    FarmRuler aims to Ease The Agricultural Activities. Our focus is on Integrating AI and Tech In Agricultural World and Ease the Procedure. Whether you re here to contribute code, design, or just explore, there s a place for you!
                 </p>
                 <h2 className="text-2xl font-semibold mb-2">Features</h2>
                 <ul className="list-disc list-inside mb-4">
