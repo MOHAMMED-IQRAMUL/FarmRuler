@@ -2,6 +2,7 @@
   "name": "farmruler",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,6 +10,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-react": "^7.24.7",
     "@heroicons/react": "^1.0.6",
     "next": "14.2.13",
     "react": "^18",
