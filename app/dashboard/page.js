@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { SunIcon, CloudIcon, UserIcon, ChatIcon, BookOpenIcon } from '@heroicons/react/outline';
 import Navbar from '../components/Navbar';
-import '../styles/globals.css'; 
 import Footer from '../components/Footer';
 
 export default function Dashboard() {
