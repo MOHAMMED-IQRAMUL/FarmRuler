@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaLeaf } from 'react-icons/fa';
+import LogoutButton from './LogoutButton';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
