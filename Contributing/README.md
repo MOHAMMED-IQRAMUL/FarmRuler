@@ -42,3 +42,11 @@ Welcome to the FarmRuler project! We appreciate your contributions. Please add y
 - **GitHub:** [GitHub Profile](https://www.github.com/arpit529srivastava)
 - **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/arpitsrivastava529/)
 - **Info:** Enthusiastic about coding and open-source contributions, Competitive Programming, Backend Development.
+
+
+### <img src="https://github.com/hamzathul.png" alt="Photo" width="120" height="120" style="border-radius: 50%;">
+**Name:** [Hamzathul Favas E](https://www.github.com/hamzathul)
+
+- **GitHub:** [GitHub Profile](https://www.github.com/hamzathul)
+- **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/hamzathul)
+- **Info:** Enthusiastic full Stack developer with a strong interest and passion for coding.
