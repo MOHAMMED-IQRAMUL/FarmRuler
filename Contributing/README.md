@@ -35,3 +35,10 @@ Welcome to the FarmRuler project! We appreciate your contributions. Please add y
 - **LinkedIn:** [LinkedIn Profile](https://linkedin.com/in/janesmith)
 - **Portfolio:** [Portfolio](https://janesmith.com)
 - **Info:** Enthusiastic about coding and open-source contributions.
+
+### <img src="https://avatars.githubusercontent.com/u/151747267?v=4" width="100" height="100" style="border-radius: 50%;">
+**Name:** [Arpit Srivastava](https://www.github.com/arpit529srivastava)
+
+- **GitHub:** [GitHub Profile](https://www.github.com/arpit529srivastava)
+- **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/arpitsrivastava529/)
+- **Info:** Enthusiastic about coding and open-source contributions, Competitive Programming, Backend Development.
