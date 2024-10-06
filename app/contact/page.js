@@ -15,7 +15,7 @@ const ContactPage = () => {
                     <div className="w-1/2">
                         <h1 className="text-3xl font-bold mb-4 text-center">Contact Us</h1>
                         <p className="text-black-700 mb-6 text-center">
-                            Welcome to FarmRuler! We're on a mission to build an Incredible Full-Stack Web Application for Agriculture and Farming enthusiasts.
+                            Welcome to FarmRuler! We &apos re a mission to build an Incredible Full-Stack Web Application for Agriculture and Farming enthusiasts.
                         </p>
                         <form className="space-y-4">
                             <div>
@@ -43,7 +43,7 @@ const ContactPage = () => {
                         <ul className="list-disc list-inside text-gray-700 space-y-2">
                             <li>Simple and Clean UI to Display Weather Conditions</li>
                             <li>Tool connecting the agricultural community with NASA datasets</li>
-                            <li>Integrate NASA datasets to support farmers' decision-making</li>
+                            <li>Integrate NASA datasets to support farmers decision-making</li>
                             <li>Farmers can determine resources for selected spatial and temporal ranges</li>
                             <li>Many More...</li>
                         </ul>
