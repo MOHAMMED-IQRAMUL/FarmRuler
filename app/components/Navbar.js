@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaLeaf } from 'react-icons/fa';
+import LogoutButton from './LogoutButton';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -26,6 +27,7 @@ const Navbar = () => {
                     <button className="bg-white text-green-600 px-4 py-2 rounded hover:bg-gray-200">
                         <a href="/sign-up"> Sign Up </a>
                     </button>
+                    <LogoutButton />
                 </div>
                 <div className="md:hidden">
                     <button onClick={() => setIsOpen(!isOpen)} className="text-white focus:outline-none">
