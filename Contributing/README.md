@@ -42,3 +42,11 @@ Welcome to the FarmRuler project! We appreciate your contributions. Please add y
 - **GitHub:** [GitHub Profile](https://www.github.com/arpit529srivastava)
 - **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/arpitsrivastava529/)
 - **Info:** Enthusiastic about coding and open-source contributions, Competitive Programming, Backend Development.
+
+### <img src="https://github.com/kausaraahmed/kausaraahmed/blob/main/assets/logo2.png" width="79" height="90">
+**Name:** [Kausar Ahmed](https://github.com/kausaraahmed)
+
+- **GitHub:** [GitHub Profile](https://github.com/kausaraahmed)
+- **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/kausaraahmed/)
+- **Portfolio:** [Portfolio](https://kausaraahmed.github.io/portfolio/)
+- **Info:** Aspiring Machine Learning engineer. Exploring different tech stacks.
