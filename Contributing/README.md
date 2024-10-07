@@ -60,3 +60,10 @@ Welcome to the FarmRuler project! We appreciate your contributions. Please add y
 - **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/hamzathul)
 - **Info:** Enthusiastic full Stack developer with a strong interest and passion for coding.
 
+### <img src="https://github.com/hamzathul.png" alt="Photo" width="120" height="120" style="border-radius: 50%;">
+**Name:** [Adarsh Upadhyay](https://github.com/Tony-ArtZ)
+
+- **GitHub:** [GitHub Profile](https://github.com/Tony-ArtZ)
+- **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/adarsh-upadhyay-8b8a55232/)
+- **Info:** Aspiring full stack developer with a knack for game dev and art
+
