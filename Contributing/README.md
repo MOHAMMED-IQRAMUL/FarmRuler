@@ -67,3 +67,10 @@ Welcome to the FarmRuler project! We appreciate your contributions. Please add y
 - **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/adarsh-upadhyay-8b8a55232/)
 - **Info:** Aspiring full stack developer with a knack for game dev and art
 
+- ### <img src="https://avatars.githubusercontent.com/u/108176375?s=400&u=d35d56d5423fef66f9e4f4083f3d87db76b272af&v=4" alt="Photo" width="120" height="120" style="border-radius: 50%;">
+**Name:** [Tushar Kumar](https://github.com/kumartushar0605)
+
+- **GitHub:** [GitHub Profile](https://github.com/kumartushar0605)
+- **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/kumar--tushar/)
+- **Info:** Full stack developer and blockchain developer
+
