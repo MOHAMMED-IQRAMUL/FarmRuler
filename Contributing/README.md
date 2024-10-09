@@ -74,3 +74,8 @@ Welcome to the FarmRuler project! We appreciate your contributions. Please add y
 - **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/kumar--tushar/)
 - **Info:** Full stack developer and blockchain developer
 
+**Name:** [Abhishek Porwal](https://github.com/abhishek332)
+
+- **GitHub:** [GitHub Profile](https://github.com/abhishek332)
+- **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/abhishek-porwal-213726194/)
+- **Info:** Frontend Developer with expertise in React.js, TypeScript, and the MERN stack. Specializes in building scalable web applications, optimizing performance, and delivering user-centric solutions. Experienced in using Next.js, Tailwind CSS, and WebSockets, with a focus on security and interactive dashboards..
