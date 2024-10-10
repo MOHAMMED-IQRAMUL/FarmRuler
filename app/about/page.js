@@ -2,13 +2,14 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import PageTitle from '../components/PageTitle';
 
 const AboutPage = () => {
     return (
         <div className="min-h-screen bg-gray-100 p-6">
             <Navbar />
             <div className="max-w-4xl mx-auto bg-white shadow-md rounded-lg p-8">
-                <h1 className="text-4xl font-bold text-center mb-6">About Us</h1>
+                <PageTitle title="About Us" />
                 <p className="text-lg text-gray-700 mb-4">
                     Welcome to FarmRuler! We&aposre on a mission to build an Incredible Full-Stack Web Application Specially For Person With Interest in Agriculture and Farming. This repository is a collaborative effort where we invite developers, designers, and enthusiasts to contribute and help bring this project to life.
                 </p>
