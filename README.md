@@ -22,8 +22,49 @@ Whether you're here to contribute code, design, or just explore, there's a place
 | Contributing | [Contributing/README.md](Contributing/README.md) |
 | Project Directory | [Directory/README.md](Directory/README.md) |
 
+
+# FarmRuler
+
+## ⭐️ Stargazers
+[![Stargazers repo roster for @MOHAMMED-IQRAMUL/FarmRuler](https://reporoster.com/stars/notext/MOHAMMED-IQRAMUL/FarmRuler)](https://github.com/MOHAMMED-IQRAMUL/FarmRuler/stargazers)
+
+## 🍴 Forkers
+[![Forkers repo roster for @MOHAMMED-IQRAMUL/FarmRuler](https://reporoster.com/forks/notext/MOHAMMED-IQRAMUL/FarmRuler)](https://github.com/MOHAMMED-IQRAMUL/FarmRuler/network/members)
+
+## 🤝 Contributors
+[![Contributors repo roster for @MOHAMMED-IQRAMUL/FarmRuler](https://contributors-img.web.app/image?repo=MOHAMMED-IQRAMUL/FarmRuler)](https://github.com/MOHAMMED-IQRAMUL/FarmRuler/graphs/contributors)
+
+## 🐛 Open Issues
+[![GitHub issues](https://img.shields.io/github/issues/MOHAMMED-IQRAMUL/FarmRuler)](https://github.com/MOHAMMED-IQRAMUL/FarmRuler/issues)
+
+## ✅ Closed Issues
+[![GitHub closed issues](https://img.shields.io/github/issues-closed/MOHAMMED-IQRAMUL/FarmRuler)](https://github.com/MOHAMMED-IQRAMUL/FarmRuler/issues?q=is%3Aissue+is%3Aclosed)
+
+## 📬 Pull Requests
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/MOHAMMED-IQRAMUL/FarmRuler)](https://github.com/MOHAMMED-IQRAMUL/FarmRuler/pulls)
+
+## 📜 License
+[![GitHub license](https://img.shields.io/github/license/MOHAMMED-IQRAMUL/FarmRuler)](https://github.com/MOHAMMED-IQRAMUL/FarmRuler/blob/main/LICENSE)
+
+## 📥 Downloads
+[![GitHub All Releases](https://img.shields.io/github/downloads/MOHAMMED-IQRAMUL/FarmRuler/total)](https://github.com/MOHAMMED-IQRAMUL/FarmRuler/releases)
+
+## 🏷️ Latest Release
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/MOHAMMED-IQRAMUL/FarmRuler)](https://github.com/MOHAMMED-IQRAMUL/FarmRuler/releases)
+
+## 📈 Commit Activity
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/MOHAMMED-IQRAMUL/FarmRuler)](https://github.com/MOHAMMED-IQRAMUL/FarmRuler/commits/main)
+
+## 📊 Repository Size
+[![GitHub repo size](https://img.shields.io/github/repo-size/MOHAMMED-IQRAMUL/FarmRuler)](https://github.com/MOHAMMED-IQRAMUL/FarmRuler)
+
+
+
+## More
+
 ```
 After Contributing Please Add your data in    [Contributing](Contributing/README.md)
 
 Add in next availabe spot available, dont Cheat 
 ```
+
