@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import { Disclosure } from '@headlessui/react';
-import { ChevronUpIcon } from '@heroicons/react/24/solid'; // Ensure this is installed
+import { ChevronUpIcon } from '@heroicons/react/solid'; 
 
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -51,7 +51,6 @@ const FAQ = ({ heading, value }) => (
 const FAQPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
- 
   const filteredFaqData = faqData.filter(item =>
     item.heading.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -62,14 +61,14 @@ const FAQPage = () => {
       <div className="flex-grow max-w-4xl mx-auto bg-white shadow-md rounded-lg p-8 text-gray-700 mb-10">
         <PageTitle title="FarmRuler FAQ" />
         <p className="text-lg mb-4">
-          Welcome to FarmRuler! We're building a web app for agriculture enthusiasts.
+          Welcome to FarmRuler! We&#39;re building a web app for agriculture enthusiasts.
           This project integrates AI and NASA datasets to help farmers.
         </p>
+
         <p className="text-lg mb-8">
           🚀 Contribute to the project by exploring the code and adding new features!
         </p>
-        
-      
+
         <input
           type="text"
           placeholder="Search FAQs..."
