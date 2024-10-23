@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import ThemeToggle from "./components/ThemeToggle";
@@ -50,12 +51,12 @@ export default function Home() {
       </section>
 
       <section className="bg-green-500 text-center py-6 mt-auto border-t-4 border-gray-300 rounded-lg">
-        <button className="mx-2 px-6 py-2 font-semibold rounded-lg shadow-md hover:bg-gray-100">
+        <Link className="mx-2 px-6 py-2 font-semibold rounded-lg shadow-md hover:bg-gray-100" href='/sign-up'>
           Sign Up
-        </button>
-        <button className="mx-2 px-6 py-2 bg-white text-green-500 font-semibold rounded-lg shadow-md hover:bg-gray-100">
+        </Link>
+        <Link className="mx-2 px-6 py-2 bg-white text-green-500 font-semibold rounded-lg shadow-md hover:bg-gray-100" href='/sign-in'>
           Sign In
-        </button>
+        </Link>
       </section>
 
       <Footer />

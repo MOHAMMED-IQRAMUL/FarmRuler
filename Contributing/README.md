@@ -84,3 +84,10 @@ Welcome to the FarmRuler project! We appreciate your contributions. Please add y
 - **GitHub:** [GitHub Profile](https://github.com/abhishek332)
 - **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/abhishek-porwal-213726194/)
 - **Info:** Frontend Developer with expertise in React.js, TypeScript, and the MERN stack. Specializes in building scalable web applications, optimizing performance, and delivering user-centric solutions. Experienced in using Next.js, Tailwind CSS, and WebSockets, with a focus on security and interactive dashboards..
+
+### <img src="https://avatars.githubusercontent.com/u/104073199" alt="Photo" width="120" height="120" style="border-radius: 50%;">
+**Name:** [Aditya Pratap Singh](https://github.com/Aditya-PS-05)
+
+- **GitHub:** [GitHub Profile](https://github.com/Aditya-PS-05)
+- **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/aditya-pratap-singh-952a8820a/)
+- **Info:** Full stack developer and blockchain developer
