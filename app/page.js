@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import ThemeToggle from "./components/ThemeToggle";
