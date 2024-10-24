@@ -13,7 +13,7 @@ import Contactus from "@mui/icons-material/ContactMail";
 import FAQIcon from "@mui/icons-material/QuestionAnswer";
 import PrivacyIcon from "@mui/icons-material/PrivacyTip";
 import TermsIcon from "@mui/icons-material/Gavel";
-
+import 'react-resizable/css/styles.css';
 
 const LeftSideBar = () => {
 
@@ -34,10 +34,6 @@ const LeftSideBar = () => {
     { name: "Privacy and Policy", url: "/privacy", icon: PrivacyIcon },
     { name: "Terms and Services", url: "/terms", icon: TermsIcon }
   ];
-
-
-
-
 
   return (
     <ResizableBox
@@ -78,7 +74,7 @@ const LeftSideBar = () => {
                     <ul>
                         {NavItems.map((item) => (
                             <li key={item.name} className="mb-2">
-                                <a href={item.url} className="flex items-center text-blue-500 hover:underline">
+                                <a href={item.url} className="flex items-center text-gray-500 font-light hover:underline">
                                     <item.icon className="h-5 w-5 mr-2" />
                                     {item.name}
                                 </a>
@@ -89,7 +85,7 @@ const LeftSideBar = () => {
                     <ul>
                         {NavItemsExt.map((item) => (
                             <li key={item.name} className="mb-2">
-                                <a href={item.url} className="flex items-center text-blue-500 hover:underline">
+                                <a href={item.url} className="flex items-center hover:underline text-gray-500 font-light">
                                     <item.icon className="h-5 w-5 mr-2" />
                                     {item.name}
                                 </a>
