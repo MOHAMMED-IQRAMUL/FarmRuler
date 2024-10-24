@@ -51,10 +51,10 @@ export default function Home() {
       </section>
 
       <section className="bg-green-500 text-center py-6 mt-auto border-t-4 border-gray-300 rounded-lg">
-        <Link className="mx-2 px-6 py-2 font-semibold rounded-lg shadow-md hover:bg-gray-100" href='/sign-up'>
+        <Link className="mx-2 px-6 py-2 bg-white text-green-500 font-semibold rounded-lg shadow-md hover:bg-gray-800 hover:text-white" href='/sign-up'>
           Sign Up
         </Link>
-        <Link className="mx-2 px-6 py-2 bg-white text-green-500 font-semibold rounded-lg shadow-md hover:bg-gray-100" href='/sign-in'>
+        <Link className="mx-2 px-6 py-2 bg-white text-green-500 font-semibold rounded-lg shadow-md hover:bg-gray-800 hover:text-white" href='/sign-in'>
           Sign In
         </Link>
       </section>
