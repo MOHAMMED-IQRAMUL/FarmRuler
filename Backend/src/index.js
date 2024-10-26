@@ -13,8 +13,7 @@ const app = express();
 app.use(express.json()); //parses incoming requests with JSON payloads and makes them available via req.body
 app.use(cookieParser()); //parses incoming requests with cookies and makes them available via req.cookies
 app.use(cors({
-  // origin:"https://farm-ruler.vercel.app/",
-  origin:"http://localhost:3000",
+  origin:"https://farm-ruler.vercel.app/",
   credentials:true
 }))
 
