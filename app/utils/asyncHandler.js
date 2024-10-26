@@ -1,14 +1,22 @@
-
-const asyncHandler = async (axiosPromise) => {
+import toast from "react-hot-toast";
+const asyncHandler = async (axiosPromise,{showToast=true,toastMsg="Loading.."}) => {
+    let toastId=null;
+    if(showToast){
+        toastId=toast.loading(toastMsg);
+    }
     try {
         const response = await axiosPromise;
+        if(toastId){
+            toast.success(response.data.message,{id: toastId});
+        }
        return response.data;
     }
     catch (error) {
-        // console.log(error.response.data.error); 
         if(error.status=="400"){
             console.error("Bad Request",error.message);
-            //TODO: Use react-hot-toast to display errors.
+            if(toastId){
+                toast.error(error.response.data.error,{id: toastId});
+            }
         }       
         if(error.status=='401'){
             console.error("Unauthorized request: ",error.message);

@@ -12,50 +12,63 @@ export const useAuth = () => {
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(false);
   const router = useRouter();
-  useEffect(()=>{
+  useEffect(() => {
     // If cookie is available just request the user data 
-    async function getUserIfAvailable(){
-      const data = await asyncHandler(axios.get("/auth/user"));
-      if(data){
+    async function getUserIfAvailable() {
+      const data = await asyncHandler(axios.get("/auth/user"), { showToast: false });
+      if (data) {
         setUser(data);
       }
     }
     getUserIfAvailable();
-  },[]);
-  const signUp=async(username,fullName,gender,password,confirmPassword)=>{
-    const data=await asyncHandler(axios.post("/auth/signup",
-      {
-        username,fullName,gender,password,confirmPassword
-      }
-    ));
-    console.log(data);
-    
-    if(data){
+  }, []);
+  const signUp = async (username, fullName, gender, password, confirmPassword) => {
+    setLoading(true);
+    const data = await asyncHandler(
+      axios.post("/auth/signup",
+        {
+          username, fullName, gender, password, confirmPassword
+        }
+      ),
+      { toastMsg: "Creating Your Account.." }
+    );
+    if (data) {
       setUser(data);
       router.push("/dashboard");
     }
+    setLoading(false);
   }
-  const logIn=async(username,password)=>{
-    const data=await asyncHandler(axios.post("/auth/login",{username,password}));
-    if(data){
+  const logIn = async (username, password) => {
+    setLoading(true);
+    const data = await asyncHandler(
+      axios.post("/auth/login", { username, password }),
+      {toastMsg:"Validating Credentails.."}
+    );
+    if (data) {
       setUser(data);
       router.push("/dashboard");
     }
+    setLoading(false);
   }
 
   // Log out method
   const logOut = async () => {
-    const data=await asyncHandler(axios.post("/auth/logout"));
-    if(data){
-      console.log(data);
+    setLoading(true);
+    const data = await asyncHandler(
+      axios.post("/auth/logout"),
+      {toastMsg:"Logging You Out.."}
+    );
+    if (data) {
       setUser(null);//Remove existing user
       router.push("/sign-in");//Navigate back to sign in page
     }
+    setLoading(false);
   };
 
   return (
-    <AuthContext.Provider value={{ user,signUp,logIn, logOut }}>
+    <AuthContext.Provider value={{ user,loading, signUp, logIn, logOut }}>
       {children}
     </AuthContext.Provider>
   );

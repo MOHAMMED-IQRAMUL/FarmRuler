@@ -4,9 +4,10 @@ import { UserIcon } from '@heroicons/react/outline';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { useAuth } from '../context/AuthContext';
+import toast from 'react-hot-toast';
 
 export default function SignUp() {
-    const {signUp} = useAuth();
+    const {loading,signUp} = useAuth();
     const handleSignUp=async (e)=>{
         e.preventDefault();
         const username=e.target.elements.username.value;
@@ -15,7 +16,7 @@ export default function SignUp() {
         const confirmPassword=e.target.elements.confirmPassword.value;
         const gender=e.target.elements.gender.value;
         if(!username || !password || !fullName || !confirmPassword || (gender!=="male" && gender!=="female")){
-            // TODO: Create a toast stating "fill all fields"
+           toast.error("Fill all fields..");
             console.error("Fill all the fields");
             return false;
         }
@@ -79,8 +80,8 @@ export default function SignUp() {
                                     Gender
                                 </label>
                                 <select name="gender" id="gender" required className="appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 dark:bg-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
-                                >
-                                    <option selected disabled="true">Choose Gender</option>
+                               defaultValue="Choose gender">
+                                    <option value="Choose gender" disabled={true}>Choose gender</option>
                                     <option value="male">Male</option>
                                     <option value="female">Female</option>
                                 </select>
@@ -132,8 +133,9 @@ export default function SignUp() {
                             <button
                                 type="submit"
                                 className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                disabled={loading}
                             >
-                                Sign up
+                               {loading?" Signing up..":"Sign up"}
                             </button>
                         </div>
                     </form>

@@ -5,15 +5,16 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { useAuth } from '../context/AuthContext';
+import toast from 'react-hot-toast';
 
 export default function SignIn() {
-    const {logIn}=useAuth();
+    const {loading,logIn}=useAuth();
     const handleSignIn=async(e)=>{
         e.preventDefault();
         const username=e.target.elements.username.value;
         const password=e.target.elements.password.value;
         if(!username || !password){
-            // TODO: Create a toast stating "fill all fields"
+            toast.error("Fill all the fields..");
             console.error("Fill all the fields");
             return false;
         }
@@ -84,8 +85,9 @@ export default function SignIn() {
                             <button
                                 type="submit"
                                 className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                disabled={loading}
                             >
-                                Sign in
+                                {loading?"Signing in..":"Sign in"}
                             </button>
                         </div>
                     </form>
