@@ -76,3 +76,19 @@ export const logout = (req, res) => {
     res.status(500).json({ error: "Internal Server Error" });
   }
 };
+
+export const getUserDetails=async(req,res)=>{
+  // Getting the user id from the middleware i.e. authenticateUser.js
+  try {
+    let userId=req.userId;
+    const user=await User.findById(userId).select("-password");
+    if(!user){
+      res.status(401).json({error: "Invalid userid."})
+      return ;
+    }
+    res.status(200).json(user);
+  } catch (error) {
+    console.log("Error in getUserDetails controller", error.message);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+}

@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { FaLeaf } from 'react-icons/fa';
 import LogoutButton from './LogoutButton';
 import ThemeToggle from './ThemeToggle';
-
+import { useAuth } from '../context/AuthContext';
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-
+    const { user } = useAuth();
     return (
         <nav className="bg-green-600 p-4">
             <div className="container mx-auto flex justify-between items-center">
@@ -22,13 +22,18 @@ const Navbar = () => {
                     <a href="/about" className="text-white hover:text-gray-300 hover:text-xl transition-all ease-out duration-200">About</a>
                     <a href="/contact" className="text-white hover:text-gray-300 hover:text-xl transition-all ease-out duration-200">Contact</a>
                     <a href="/faq" className="text-white hover:text-gray-300 hover:text-xl transition-all ease-out duration-200">FAQ</a>
-                    <button className="bg-white text-green-600 px-4 py-2 rounded hover:bg-gray-200">
-                        <a href="/sign-in"> Sign In </a>
-                    </button>
-                    <button className="bg-white text-green-600 px-4 py-2 rounded hover:bg-gray-200">
-                        <a href="/sign-up"> Sign Up </a>
-                    </button>
-                    <LogoutButton />
+                    {
+                        !user &&
+                        <>
+                            <button className="bg-white text-green-600 px-4 py-2 rounded hover:bg-gray-200">
+                                <a href="/sign-in"> Sign In </a>
+                            </button>
+                            <button className="bg-white text-green-600 px-4 py-2 rounded hover:bg-gray-200">
+                                <a href="/sign-up"> Sign Up </a>
+                            </button>
+                        </>
+                    }
+                    {user && <LogoutButton />}
                     <ThemeToggle />
                 </div>
                 <div className="md:hidden">

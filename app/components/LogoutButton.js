@@ -1,16 +1,12 @@
 import React from 'react';
-
-const handleLogout = () => {
-  localStorage.removeItem('token');
-
-  // Redirecting to the home page, if you want to redirect to a different page, change the value of window.location.href
-  window.location.href = '/'; 
-};
+import { useAuth } from '../context/AuthContext';
 
 const LogoutButton = () => {
+  const {logOut}=useAuth();
+  
   return (
     <button 
-      onClick={handleLogout} 
+      onClick={async()=>{await logOut();}} 
       className="bg-white text-green-600 px-4 py-2 rounded hover:bg-gray-200"
     >
       Logout
