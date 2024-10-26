@@ -91,3 +91,10 @@ Welcome to the FarmRuler project! We appreciate your contributions. Please add y
 - **GitHub:** [GitHub Profile](https://github.com/Aditya-PS-05)
 - **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/aditya-pratap-singh-952a8820a/)
 - **Info:** Full stack developer and blockchain developer
+
+### <img src="https://avatars.githubusercontent.com/u/143615010" alt="Photo" width="120" height="120" style="border-radius: 50%;">
+**Name:** [Golla Pradeep Kumar](https://github.com/PradeepG-07)
+
+- **GitHub:** [GitHub Profile](https://github.com/PradeepG-07)
+- **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/pradeep-golla-835a6522b/)
+- **Info:** Full stack developer 
