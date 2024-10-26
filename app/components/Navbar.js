@@ -3,14 +3,17 @@ import { FaLeaf } from 'react-icons/fa';
 import LogoutButton from './LogoutButton';
 import ThemeToggle from './ThemeToggle';
 import { useAuth } from '../context/AuthContext';
+import { Button } from '@mui/material';
+import Link from 'next/link';
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const { user } = useAuth();
     return (
-        <nav className="bg-green-600 p-4">
+        <nav className="bg-gradient-to-r from-green-800 via-green-500 to-green-800 fixed top-8 left-1/2 transform -translate-x-1/2 w-full max-w-5xl mx-auto z-50   backdrop-blur-md rounded-full border border-purple-500/20 shadow-lg shadow-purple-500/10 px-4 py-4">
             <div className="container mx-auto flex justify-between items-center">
                 <div className="flex items-center">
-                    <FaLeaf className="text-white text-3xl mr-2" />
+                    
+                        <FaLeaf className="text-white text-3xl mr-2" />
                     <span className="text-white text-2xl font-bold">
                         <a href="/">FarmRuler</a>
                     </span>
@@ -62,6 +65,7 @@ const Navbar = () => {
                 </button>
             </div>
         </nav>
+       
     );
 };
 
