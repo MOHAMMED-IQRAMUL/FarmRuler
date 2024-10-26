@@ -4,10 +4,21 @@
  import { UserIcon } from '@heroicons/react/outline';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-
+import { useAuth } from '../context/AuthContext';
 
 export default function SignIn() {
- 
+    const {logIn}=useAuth();
+    const handleSignIn=async(e)=>{
+        e.preventDefault();
+        const username=e.target.elements.username.value;
+        const password=e.target.elements.password.value;
+        if(!username || !password){
+            // TODO: Create a toast stating "fill all fields"
+            console.error("Fill all the fields");
+            return false;
+        }
+        await logIn(username,password);
+    }
     return (
         <div className="min-h-screen flex flex-col">
             <Navbar />
@@ -19,21 +30,21 @@ export default function SignIn() {
                             Sign in to your account
                         </h2>
                     </div>
-                    <form className="mt-8 space-y-6 border-[2px] border-gray-800 w-[30vw] p-4 rounded-md" action="#" method="POST">
+                    <form className="mt-8 space-y-6 border-[2px] border-gray-800 w-[30vw] p-4 rounded-md" onSubmit={handleSignIn} action="#" method="POST">
                         <input type="hidden" name="remember" value="true" />
                         <div className="rounded-md shadow-sm -space-y-px flex flex-col justify-center items-center gap-2">
                             <div className='w-full'>
-                                <label htmlFor="email" className="font-semibold text-[0.92rem]">
-                                    Email address
+                                <label htmlFor="username" className="font-semibold text-[0.92rem]">
+                                    Username
                                 </label>
                                 <input
-                                    id="email"
-                                    name="email"
-                                    type="email"
-                                    autoComplete="email"
+                                    id="username"
+                                    name="username"
+                                    type="username"
+                                    autoComplete="username"
                                     required
-                                    className="appearance-none rounded-md relative block w-full px-3 py-2 border-[2px] border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
-                                    placeholder="Enter your email"
+                                    className="appearance-none rounded-md relative block w-full px-3 py-2 border-[2px] border-gray-300 placeholder-gray-500 text-white rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                                    placeholder="Enter your username"
                                 />
                             </div>
                             <div className='w-full'>
@@ -46,7 +57,7 @@ export default function SignIn() {
                                     type="password"
                                     autoComplete="current-password"
                                     required
-                                    className="appearance-none rounded-md relative block w-full px-3 py-2 border-[2px] border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                                    className="appearance-none rounded-md relative block w-full px-3 py-2 border-[2px] border-gray-300 placeholder-gray-500 text-white rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                                     placeholder="Enter your password"
                                 />
                             </div>

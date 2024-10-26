@@ -1,14 +1,22 @@
 import express from "express";
 import { config } from "dotenv";
+import cookieParser from "cookie-parser";
+import cors from "cors";
 
 import { connectToDatabase, disconnectFromDatabase } from "./db/connection.js";
 import authRoutes from "./routes/auth.routes.js";
 
 config(); // This loads environment variables from a .env
 
-const PORT = 3000; // Server PORT
+const PORT = 8000; // Server PORT
 const app = express();
 app.use(express.json()); //parses incoming requests with JSON payloads and makes them available via req.body
+app.use(cookieParser()); //parses incoming requests with cookies and makes them available via req.cookies
+app.use(cors({
+  // origin:"https://farm-ruler.vercel.app/",
+  origin:"http://localhost:3000",
+  credentials:true
+}))
 
 connectToDatabase()
   .then(() => {
