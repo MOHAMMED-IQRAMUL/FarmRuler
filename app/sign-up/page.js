@@ -24,9 +24,9 @@ export default function SignUp() {
         
     }
     return (
-        <div className="min-h-screen flex flex-col">
+        <div className="min-h-screen pt-32 flex flex-col">
             <Navbar />
-            <main className="flex-grow flex items-center justify-center">
+            <main className="flex-grow mb-8 flex items-center justify-center">
                 <div className="max-w-md w-full space-y-8">
                     <div>
                         <UserIcon className="mx-auto h-12 w-12 text-indigo-600" />

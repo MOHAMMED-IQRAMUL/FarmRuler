@@ -25,10 +25,10 @@ export default function Home() {
 
       <section
         id="features"
-        className="py-10 text-center border-t-4 border-gray-300 rounded-lg"
+        className="py-10 text-center border-t-2 border-gray-300 rounded-lg"
       >
-        <h2 className="text-3xl font-semibold">Features</h2>
-        <ul className="mt-6 space-y-4">
+        <h2 className="text-5xl font-semibold text-green-700">Features</h2>
+        <ul className="mt-8 space-y-4 text-green-500">
           <li className="text-lg">Track your crops</li>
           <li className="text-lg">Manage your livestock</li>
           <li className="text-lg">Analyze farm performance</li>
@@ -37,9 +37,9 @@ export default function Home() {
 
       <section
         id="vision"
-        className="py-10 text-center border-t-4 border-gray-300 rounded-lg"
+        className="py-24 text-center border-gray-300 rounded-lg"
       >
-        <h2 className="text-3xl font-semibold text-gray-500">Our Vision</h2>
+        <h2 className="text-5xl font-semibold text-gray-300">Our Vision</h2>
         <p className="mt-4 text-lg text-gray-400">
           To revolutionize farm management with cutting-edge technology.
         </p>
@@ -47,15 +47,15 @@ export default function Home() {
 
       <section
         id="mission"
-        className="py-10 text-center border-t-4 border-gray-300 rounded-lg"
+        className="py-24 text-center border-t border-gray-300 rounded-lg"
       >
-        <h2 className="text-3xl font-semibold text-gray-500">Our Mission</h2>
+        <h2 className="text-5xl font-semibold text-gray-300">Our Mission</h2>
         <p className="mt-4 text-lg text-gray-400">
           To provide farmers with the tools they need to succeed and thrive.
         </p>
       </section>
 
-      <section className="bg-green-500 text-center py-6 mt-auto border-t-4 border-gray-300 rounded-lg">
+      <section className="bg-green-500 text-center py-12 mt-auto border-gray-300 rounded-lg">
         <Link className="mx-2 px-6 py-2 bg-white text-green-500 font-semibold rounded-lg shadow-md hover:bg-gray-800 hover:text-white" href='/sign-up'>
           Sign Up
         </Link>

@@ -56,7 +56,7 @@ const FAQPage = () => {
   );
 
   return (
-    <div className="min-h-screen bg-gray-100 p-6 flex flex-col">
+    <div className="min-h-screen pt-32 bg-gray-100 p-6 flex flex-col">
       <Navbar />
       <div className="flex-grow max-w-4xl mx-auto bg-white shadow-md rounded-lg p-8 text-gray-700 mb-10">
         <PageTitle title="FarmRuler FAQ" />
