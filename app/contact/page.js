@@ -50,7 +50,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white flex flex-col">
+    <div className="min-h-screen pt-28 bg-white flex flex-col">
       <Navbar />
 
       <div className="flex-grow flex items-center justify-center p-6">
