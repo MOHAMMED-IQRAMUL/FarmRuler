@@ -1,13 +1,18 @@
 import bcrypt from "bcryptjs";
 import User from "../models/user.model.js";
 import generateTokenAndSetCookie from "../utils/generateToken.js";
+import validateData from "../utils/dataValidator.js";
+import { signupSchema,loginSchema } from "../utils/validationSchemas.js";
 
 export const signup = async (req, res) => {
   try {
-    const { fullName, username, password, confirmPassword, gender } = req.body;
-    if (password !== confirmPassword) {
-      return res.status(400).json({ error: "Passwords don't match" });
+    const cleanedSignupData  = validateData(signupSchema,req.body,res);
+    
+    if(!cleanedSignupData){
+      return ;
     }
+    const { fullName, username, password, gender } = cleanedSignupData;
+    
     const user = await User.findOne({ username });
     if (user) {
       return res.status(400).json({ error: "Username already exists" });
@@ -15,12 +20,12 @@ export const signup = async (req, res) => {
 
     //HASH PASSWORD HERE
     const salt = await bcrypt.genSalt(10);
-    const hasedPassword = await bcrypt.hash(password, salt);
+    const hashedPassword = await bcrypt.hash(password, salt);
 
     const newUser = new User({
       fullName,
       username,
-      password: hasedPassword,
+      password: hashedPassword,
       gender,
     });
 
@@ -47,7 +52,11 @@ export const signup = async (req, res) => {
 
 export const login = async (req, res) => {
   try {
-    const { username, password } = req.body;
+    const cleanedLoginData  = validateData(loginSchema,req.body,res);
+    if(!cleanedLoginData){
+      return ;
+    }
+    const { username, password } = cleanedLoginData;
     const user = await User.findOne({ username });
     const isPasswordCorrect = await bcrypt.compare(
       password,

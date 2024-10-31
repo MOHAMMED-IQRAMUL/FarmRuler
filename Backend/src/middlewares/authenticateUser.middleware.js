@@ -1,10 +1,11 @@
 import { config } from "dotenv";
 import jsonwebtoken from "jsonwebtoken";
+import {cleanedEnv} from "../utils/cleanedEnv.js";
 
 config();
 
 const JWT=jsonwebtoken;
-const JWT_SECRET=process.env.JWT_SECRET;
+const JWT_SECRET=cleanedEnv.JWT_SECRET;
 
 const authenticateUser=(req,res,next)=>{
     let authtoken=req.cookies.jwt;
