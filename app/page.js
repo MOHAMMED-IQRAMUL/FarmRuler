@@ -144,7 +144,7 @@ export default function Home() {
           className="mx-2 px-8 py-3 bg-white text-green-500 font-semibold rounded-lg shadow-md hover:bg-gray-800 hover:text-white transition duration-200"
           href="/sign-in"
         >
-          Sign In
+          Log In
         </Link>
       </section>
 
