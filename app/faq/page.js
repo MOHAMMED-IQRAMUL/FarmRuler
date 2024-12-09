@@ -34,13 +34,13 @@ const FAQ = ({ heading, value }) => (
   <Disclosure>
     {({ open }) => (
       <>
-        <Disclosure.Button className="flex justify-between items-center w-full px-4 py-2 bg-gray-50 rounded-lg shadow focus:outline-none focus:ring-2 focus:ring-green-600">
+        <Disclosure.Button className="flex justify-between items-center w-full px-4 py-2 rounded-lg shadow focus:outline-none focus:ring-2 focus:ring-green-600">
           <h2 className="text-lg font-semibold text-green-600">{heading}</h2>
           <ChevronUpIcon
             className={`w-5 h-5 text-green-600 transform ${open ? 'rotate-180' : ''}`}
           />
         </Disclosure.Button>
-        <Disclosure.Panel className="p-4 text-gray-700">
+        <Disclosure.Panel className="p-4 ">
           {value}
         </Disclosure.Panel>
       </>
@@ -56,9 +56,9 @@ const FAQPage = () => {
   );
 
   return (
-    <div className="min-h-screen pt-32 bg-gray-100 p-6 flex flex-col">
+    <div className="min-h-screen pt-32  p-6 flex flex-col">
       <Navbar />
-      <div className="flex-grow max-w-4xl mx-auto bg-white shadow-md rounded-lg p-8 text-gray-700 mb-10">
+      <div className="flex-grow max-w-4xl mx-auto shadow-md rounded-lg p-8 border-2 mb-10">
         <PageTitle title="FarmRuler FAQ" />
         <p className="text-lg mb-4">
           Welcome to FarmRuler! We&#39;re building a web app for agriculture enthusiasts.
@@ -82,7 +82,7 @@ const FAQPage = () => {
             <FAQ key={item.heading} heading={item.heading} value={item.value} />
           ))}
           {filteredFaqData.length === 0 && (
-            <p className="text-gray-500">No FAQs found.</p>
+            <p className="">No FAQs found.</p>
           )}
         </div>
       </div>

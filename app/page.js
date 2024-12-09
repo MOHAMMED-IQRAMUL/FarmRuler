@@ -7,21 +7,21 @@ import ThemeToggle from "./components/ThemeToggle";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-gray-900 text-white bg-white dark:bg-gray-800">
+    <div className={`min-h-screen flex flex-col`}>
       <Navbar />
 
       <div className="absolute inset-0 -z-10 h-full w-full bg-gray-800 bg-[linear-gradient(to_right,#3f3f3f_1px,transparent_1px),linear-gradient(to_bottom,#3f3f3f_1px,transparent_1px)] bg-[size:6rem_4rem]">
         <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#4caf50,transparent)]"></div>
       </div>
 
-      <header className="text-center py-10 mt-[200px]">
+      <header className="text-center py-10 mt-[200px] dark">
         <h1 className="text-6xl lg:text-8xl font-bold mb-4 leading-tight text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-green-500 to-green-600">
           Welcome to FarmRuler
         </h1>
-        <p className="mt-4 text-lg">
+        <p className="mt-4 text-lg light:text-black font-bold">
           Your ultimate farm management tool for modern farmers.
         </p>
-        <p className="mt-2 text-gray-400 max-w-md mx-auto">
+        <p className="mt-2 light max-w-md mx-auto">
           FarmRuler offers an intuitive platform that simplifies farm
           management. Track crops, monitor livestock, analyze performance, and
           gain insights to make smarter, data-driven decisions for your farm.
@@ -38,34 +38,34 @@ export default function Home() {
         <h2 className="text-6xl font-semibold mb-6 text-green-400">
           Key Features
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
-          <div className="bg-gray-800 p-6 shadow-md md:border-r-[1px] md:border-green-400">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 dark">
+          <div className=" p-6 shadow-md md:border-r-[1px] md:border-green-400">
             <h3 className="text-lg font-bold">Track Your Crops</h3>
-            <p className="mt-2 text-gray-400">
+            <p className="mt-2 light ">
               Monitor crop health, growth stages, and harvest cycles to optimize
               yield. Get alerts on when to irrigate or apply fertilizers for
               better productivity.
             </p>
           </div>
-          <div className="bg-gray-800 p-6 shadow-md md:border-r-[1px] md:border-green-400">
+          <div className=" p-6 shadow-md md:border-r-[1px] md:border-green-400">
             <h3 className="text-lg font-bold ">Manage Your Livestock</h3>
-            <p className="mt-2 text-gray-400">
+            <p className="mt-2 light ">
               Keep detailed records of livestock health, feeding schedules, and
               productivity. Receive notifications for vaccinations and health
               checks to ensure the well-being of your animals.
             </p>
           </div>
-          <div className="bg-gray-800 p-6 shadow-md md:border-r-[1px] md:border-green-400">
+          <div className=" p-6 shadow-md md:border-r-[1px] md:border-green-400">
             <h3 className="text-lg font-bold">Analyze Farm Performance</h3>
-            <p className="mt-2 text-gray-400">
+            <p className="mt-2 light">
               Utilize farm analytics to increase productivity and profitability.
               Gain insights into crop rotation, soil health, and market trends
               to make informed decisions.
             </p>
           </div>
-          <div className="bg-gray-800 p-6 shadow-md ">
+          <div className=" p-6 shadow-md md:border-r-[1px] md:border-green-400">
             <h3 className="text-lg font-bold">Weather Forecasts</h3>
-            <p className="mt-2 text-gray-400">
+            <p className="mt-2 light ">
               Access localized weather data to plan farming activities
               efficiently. Stay informed about weather changes and get advice on
               the best times for planting and harvesting.
@@ -79,7 +79,7 @@ export default function Home() {
         className="p-10 border-t-2 border-gray-700 rounded-lg"
       >
         <h2 className="text-6xl font-semibold text-green-400">Our Vision</h2>
-        <p className="mt-6 text-lg text-gray-400">
+        <p className="mt-6 text-lg light">
           At FarmRuler, we envision a future where technology and agriculture go
           hand in hand. Our goal is to revolutionize farm management through
           cutting-edge technology, empowering farmers with the tools and data
@@ -103,7 +103,7 @@ export default function Home() {
         className="p-10 text-left border-t-2 border-gray-700 rounded-lg"
       >
         <h2 className="text-5xl font-semibold text-green-400">Our Mission</h2>
-        <p className="mt-4 text-lg text-gray-400">
+        <p className="mt-4 text-lg light">
           At FarmRuler, our mission is to simplify farm operations and support
           sustainable farming practices by delivering a comprehensive and
           easy-to-use management tool. We’re dedicated to providing accurate
