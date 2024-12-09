@@ -2,15 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-
+html{
+  background-color: white;
+  color: black;
+}
 body {
     background-color: white;
     color: black;
   }
   
-  html.dark body {
-    background-color: #292929d9;
-    color: #f1f1f1;
-
-    color:#c9ffda;
-  }
+html.dark body {
+    background-color: rgb(29, 29, 29);
+    color:white;
+}
+html.light body {
+    background-color: white;
+    color:rgb(94, 92, 92);
+}

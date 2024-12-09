@@ -50,23 +50,23 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="min-h-screen pt-28 bg-white flex flex-col">
+    <div className="min-h-screen pt-28 flex flex-col">
       <Navbar />
 
       <div className="flex-grow flex items-center justify-center p-6">
-        <div className="bg-gray-100 shadow-lg border border-gray-300 rounded-lg p-6 w-full max-w-6xl flex flex-col md:flex-row justify-between space-y-8 md:space-y-0 md:space-x-8 transition-all duration-300 ease-in-out">
+        <div className=" shadow-lg border border-gray-300 rounded-lg p-6 w-full max-w-6xl flex flex-col md:flex-row justify-between space-y-8 md:space-y-0 md:space-x-8 transition-all duration-300 ease-in-out">
           <div className="w-full md:w-1/2 space-y-6">
             <h1 className="text-3xl font-bold mb-4 text-center text-green-600">
               Contact Us
             </h1>
-            <p className="text-gray-700 mb-6 text-center">
+            <p className="mb-6 text-center">
               Welcome to FarmRuler! We&apos;re on a mission to build an
               Incredible Full-Stack Web Application for Agriculture and Farming
               enthusiasts.
             </p>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="space-y-2">
-                <label className="block text-gray-800 p-1">Name</label>
+                <label className="block  p-1">Name</label>
                 <input
                   type="text"
                   name="name"
@@ -84,7 +84,7 @@ const ContactPage = () => {
                 )}
               </div>
               <div className="space-y-2">
-                <label className="block text-gray-800 p-1">Email</label>
+                <label className="block  p-1">Email</label>
                 <input
                   name="email"
                   value={formData.email}
@@ -101,7 +101,7 @@ const ContactPage = () => {
                 )}
               </div>
               <div className="space-y-2">
-                <label className="block text-gray-800 p-1">Message</label>
+                <label className="block  p-1">Message</label>
                 <textarea
                   name="message"
                   value={formData.message}
@@ -210,7 +210,7 @@ const ContactPage = () => {
                       d="M5 13l4 4L19 7"
                     ></path>
                   </svg>
-                  <span className="text-gray-700">{feature}</span>
+                  <span>{feature}</span>
                 </li>
               ))}
             </ul>

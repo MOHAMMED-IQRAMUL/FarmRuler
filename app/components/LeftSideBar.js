@@ -48,7 +48,7 @@ const LeftSideBar = () => {
       <div className="  pl-5 m-0 left w-full h-full">
 
 
-      <h1 className="text-2xl text-center py-2 font-semibold text-gray-800">Menu</h1>
+      <h1 className="text-2xl text-center py-2 font-semibold ">Menu</h1>
 
       {/* <ul className="space-y-4">
         {NavItems.map((item, index) => (
@@ -74,7 +74,7 @@ const LeftSideBar = () => {
                     <ul>
                         {NavItems.map((item) => (
                             <li key={item.name} className="mb-2">
-                                <a href={item.url} className="flex items-center text-gray-500 font-light hover:underline">
+                                <a href={item.url} className="flex items-center font-light hover:underline">
                                     <item.icon className="h-5 w-5 mr-2" />
                                     {item.name}
                                 </a>
@@ -85,7 +85,7 @@ const LeftSideBar = () => {
                     <ul>
                         {NavItemsExt.map((item) => (
                             <li key={item.name} className="mb-2">
-                                <a href={item.url} className="flex items-center hover:underline text-gray-500 font-light">
+                                <a href={item.url} className="flex items-center hover:underline  font-light">
                                     <item.icon className="h-5 w-5 mr-2" />
                                     {item.name}
                                 </a>
