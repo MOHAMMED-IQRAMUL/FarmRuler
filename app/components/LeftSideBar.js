@@ -43,12 +43,12 @@ const LeftSideBar = () => {
       maxConstraints={[600, Infinity]}
       axis="x"
       resizeHandles={["e"]}
-      className="overflow-auto w-[30%] min-w-[10%] border-r-2 border-gray-200"
+      className="overflow-hidden w-[300px] border-r-2 border-gray-200 mt-32 shadow-lg rounded-lg "
     >
       <div className="  pl-5 m-0 left w-full h-full">
 
 
-      <h1 className="text-2xl text-center py-2 font-semibold text-gray-800">Menu</h1>
+      <h1 className="text-3xl text-center py-4 font-bold text-white">Menu</h1>
 
       {/* <ul className="space-y-4">
         {NavItems.map((item, index) => (
@@ -92,7 +92,9 @@ const LeftSideBar = () => {
                             </li>
                         ))}
                     </ul>
+                    <div className="mt-6"></div>
       </div>
+      
     </ResizableBox>
   );
 };
