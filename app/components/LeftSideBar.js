@@ -48,7 +48,7 @@ const LeftSideBar = () => {
       <div className="  pl-5 m-0 left w-full h-full">
 
 
-      <h1 className="text-3xl text-center py-4 font-bold text-white">Menu</h1>
+      <h1 className="text-3xl text-center py-4 font-bold ">Menu</h1>
 
       {/* <ul className="space-y-4">
         {NavItems.map((item, index) => (
