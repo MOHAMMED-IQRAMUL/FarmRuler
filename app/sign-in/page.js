@@ -23,15 +23,15 @@ export default function SignIn() {
     return (
         <div className="min-h-screen flex flex-col">
             <Navbar />
-            <main className="flex-grow flex items-center justify-center">
-                <div className="max-w-md w-full space-y-8">
+            <main className=" flex items-center justify-center mt-14">
+                <div className="max-w-md w-full space-y-8 mb-8">
                     <div>
                         <UserIcon className="mx-auto h-12 w-12 text-indigo-600" />
-                        <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
+                        <h2 className="mt-6 text-center text-3xl font-extrabold text-indigo-700">
                             Sign in to your account
                         </h2>
                     </div>
-                    <form className="mt-8 space-y-6 border-[2px] border-gray-800 w-[30vw] p-4 rounded-md" onSubmit={handleSignIn} action="#" method="POST">
+                    <form className="mt-8 space-y-6 border-[4px] border-green-800 w-auto p-4 rounded-md " onSubmit={handleSignIn} action="#" method="POST">
                         <input type="hidden" name="remember" value="true" />
                         <div className="rounded-md shadow-sm -space-y-px flex flex-col justify-center items-center gap-2">
                             <div className='w-full'>
@@ -71,12 +71,12 @@ export default function SignIn() {
                                     type="checkbox"
                                     className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
                                 />
-                                <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-900">
+                                <label htmlFor="remember-me" className="ml-2 block text-sm">
                                     Remember me
                                 </label>
                             </div>
                             <div className="text-sm">
-                                <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
+                                <a href="#" className="font-medium hover:text-indigo-500">
                                     Forgot your password?
                                 </a>
                             </div>
@@ -84,7 +84,7 @@ export default function SignIn() {
                         <div>
                             <button
                                 type="submit"
-                                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mb-4"
                                 disabled={loading}
                             >
                                 {loading?"Signing in..":"Sign in"}
