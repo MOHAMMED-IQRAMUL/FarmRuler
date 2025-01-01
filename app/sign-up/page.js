@@ -27,15 +27,15 @@ export default function SignUp() {
         <div className="min-h-screen pt-32 flex flex-col">
             <Navbar />
             <main className="flex-grow mb-8 flex items-center justify-center">
-                <div className="max-w-md w-full space-y-8">
+                <div className="max-w-md w-full space-y-8 mb-6">
                     <div>
                         <UserIcon className="mx-auto h-12 w-12 text-indigo-600" />
                         <h2 className="mt-6 text-center text-3xl font-extrabold text-indigo-700">
                             Sign up for an account
                         </h2>
                     </div>
-                    <form className="mt-8 space-y-6" action="#" method="POST" onSubmit={handleSignUp}>
-                        <div className="rounded-md shadow-sm space-y-4">
+                    <form className="mt-8 space-y-8 border-[4px] border-green-800 w-auto p-4 rounded-md" action="#" method="POST" onSubmit={handleSignUp}>
+                        <div className="rounded-md shadow-sm space-y-4 flex-col">
                             <div>
                                 <label htmlFor="username" className="sr-only">
                                     Username

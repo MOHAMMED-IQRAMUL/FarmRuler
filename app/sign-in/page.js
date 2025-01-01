@@ -23,12 +23,12 @@ export default function SignIn() {
     return (
         <div className="min-h-screen flex flex-col">
             <Navbar />
-            <main className=" flex items-center justify-center mt-14">
+            <main className=" flex items-center justify-center mt-32">
                 <div className="max-w-md w-full space-y-8 mb-8">
                     <div>
                         <UserIcon className="mx-auto h-12 w-12 text-indigo-600" />
                         <h2 className="mt-6 text-center text-3xl font-extrabold text-indigo-700">
-                            Sign in to your account
+                            Log in to your account
                         </h2>
                     </div>
                     <form className="mt-8 space-y-6 border-[4px] border-green-800 w-auto p-4 rounded-md " onSubmit={handleSignIn} action="#" method="POST">
