@@ -7,7 +7,7 @@ import ThemeToggle from "./components/ThemeToggle";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-gray-900 text-white bg-white dark:bg-gray-800">
+    <div className="min-h-screen flex flex-col text-black dark:text-white bg-white dark:bg-gray-900">
       <Navbar />
 
       <div className="absolute inset-0 -z-10 h-full w-full bg-gray-800 bg-[linear-gradient(to_right,#3f3f3f_1px,transparent_1px),linear-gradient(to_bottom,#3f3f3f_1px,transparent_1px)] bg-[size:6rem_4rem]">
@@ -39,7 +39,7 @@ export default function Home() {
           Key Features
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
-          <div className="bg-gray-800 p-6 shadow-md md:border-r-[1px] md:border-green-400">
+          <div className="bg-gray-100 dark:bg-gray-800 p-6 shadow-md md:border-r-[1px] md:border-green-400">
             <h3 className="text-lg font-bold">Track Your Crops</h3>
             <p className="mt-2 text-gray-400">
               Monitor crop health, growth stages, and harvest cycles to optimize
@@ -47,7 +47,7 @@ export default function Home() {
               better productivity.
             </p>
           </div>
-          <div className="bg-gray-800 p-6 shadow-md md:border-r-[1px] md:border-green-400">
+          <div className="bg-gray-100 dark:bg-gray-800 p-6 shadow-md md:border-r-[1px] md:border-green-400">
             <h3 className="text-lg font-bold ">Manage Your Livestock</h3>
             <p className="mt-2 text-gray-400">
               Keep detailed records of livestock health, feeding schedules, and
@@ -55,7 +55,7 @@ export default function Home() {
               checks to ensure the well-being of your animals.
             </p>
           </div>
-          <div className="bg-gray-800 p-6 shadow-md md:border-r-[1px] md:border-green-400">
+          <div className="bg-gray-100 dark:bg-gray-800 p-6 shadow-md md:border-r-[1px] md:border-green-400">
             <h3 className="text-lg font-bold">Analyze Farm Performance</h3>
             <p className="mt-2 text-gray-400">
               Utilize farm analytics to increase productivity and profitability.
@@ -63,7 +63,7 @@ export default function Home() {
               to make informed decisions.
             </p>
           </div>
-          <div className="bg-gray-800 p-6 shadow-md ">
+          <div className="bg-gray-100 dark:bg-gray-800 p-6 shadow-md ">
             <h3 className="text-lg font-bold">Weather Forecasts</h3>
             <p className="mt-2 text-gray-400">
               Access localized weather data to plan farming activities

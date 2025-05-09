@@ -40,7 +40,7 @@ return (
             
             <div className="flex min-h-screen">
                 <LeftSideBar />
-                <div className="right w-[70%] min-w-[56%] mt-28">
+                <div className="right w-[70%] min-w-[56%] mt-28 bg">
                     <main className="flex-grow container mx-auto p-4">
                         <h1 className="text-2xl font-bold mb-4 sm:text-3xl md:text-4xl sm:mb-8">
                             Welcome to FarmRuler Dashboard
