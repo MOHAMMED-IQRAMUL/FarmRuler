@@ -11,67 +11,137 @@ const Navbar = () => {
     const { user } = useAuth();
 
     return (
-        <nav className="bg-gradient-to-r from-green-800 via-green-500 to-green-800 fixed top-8 left-1/2 transform -translate-x-1/2 w-full max-w-5xl mx-auto z-50 backdrop-blur-md rounded-full border border-purple-500/20 shadow-lg shadow-purple-500/10 px-4 py-4">
-            <div className="container mx-auto flex justify-between items-center">
+        <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 w-[95%] max-w-7xl mx-auto z-50 bg-gradient-to-r from-green-600 via-green-500 to-green-600 rounded-2xl shadow-2xl shadow-green-500/30 px-6 py-4 transition-all duration-300 hover:shadow-green-500/40">
+            <div className="flex justify-between items-center">
+                {/* Logo and Brand */}
                 <div className="flex items-center">
-                    <FaLeaf className="text-white text-3xl mr-2" />
-                    <span className="text-white text-2xl font-bold">
-                        <a href="/">FarmRuler</a>
-                    </span>
-                    
-                    <span className="text-white text-2xl hidden font-bold pl-5 hover:text-gray-200 md:block ">
-                    <a href="/dashboard">Dashboard</a>
-                    </span>
-
+                    <div className="flex items-center group cursor-pointer">
+                        <div className="relative">
+                            <FaLeaf className="text-white text-4xl mr-3 transition-all duration-300 group-hover:text-green-200 group-hover:rotate-12 group-hover:scale-110" />
+                            <div className="absolute inset-0 bg-white rounded-full blur-lg opacity-10 group-hover:opacity-20 transition-opacity duration-300"></div>
+                        </div>
+                        <a href="/" className="text-white text-3xl font-bold hover:text-green-100 transition-all duration-300">
+                            FarmRuler
+                        </a>
+                    </div>
                 </div>
-                <div className="hidden md:flex gap-4 items-center">
-                <a href="/about" className="text-white hover:text-gray-300 text-xl transition duration-200 ease-in-out">About</a>
-                <a href="/contact" className="text-white hover:text-gray-300 text-xl transition duration-200 ease-in-out">Contact</a>
-                <a href="/faq" className="text-white hover:text-gray-300 text-xl transition duration-200 ease-in-out">FAQ</a>
 
-                    {!user && (
-                        <>
-                            <button className="bg-white text-green-600 px-4 py-2 rounded hover:bg-gray-200">
-                                <a href="/sign-in"> Log In </a>
-                            </button>
-                            <button className="bg-white text-green-600 px-4 py-2 rounded hover:bg-gray-200">
-                                <a href="/sign-up"> Sign Up </a>
-                            </button>
-                        </>
-                    )}
-                    {user && <LogoutButton />}
-                    <ThemeToggle />
+                {/* Desktop Navigation */}
+                <div className="hidden md:flex items-center space-x-8">
+                    {/* Navigation Links */}
+                    <div className="flex items-center space-x-8">
+                        <a href="/dashboard" className="text-white hover:text-green-100 text-lg font-semibold transition-all duration-300 relative group">
+                            Dashboard
+                            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300"></span>
+                        </a>
+                        <a href="/about" className="text-white hover:text-green-100 text-lg font-medium transition-all duration-300 relative group">
+                            About
+                            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300"></span>
+                        </a>
+                        <a href="/contact" className="text-white hover:text-green-100 text-lg font-medium transition-all duration-300 relative group">
+                            Contact
+                            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300"></span>
+                        </a>
+                        <a href="/faq" className="text-white hover:text-green-100 text-lg font-medium transition-all duration-300 relative group">
+                            FAQ
+                            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300"></span>
+                        </a>
+                    </div>
+
+                    {/* Auth Buttons */}
+                    <div className="flex items-center space-x-4">
+                        {!user && (
+                            <>
+                                <a href="/sign-up" className="group relative px-6 py-2.5 bg-gradient-to-r from-green-500 to-emerald-500 text-white font-semibold rounded-xl hover:from-green-400 hover:to-emerald-400 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/30 transform">
+                                    <span className="relative z-10">Sign Up</span>
+                                    <div className="absolute inset-0 bg-white/20 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                </a>
+                            </>
+                        )}
+                        {user && <LogoutButton />}
+                        
+                        {/* Theme Toggle with enhanced styling */}
+                        <div className="ml-2">
+                            <ThemeToggle />
+                        </div>
+                    </div>
                 </div>
+
+                {/* Mobile Menu Button */}
                 <div className="md:hidden">
-                    <button onClick={() => setIsOpen(!isOpen)} className="text-white focus:outline-none">
-                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <button 
+                        onClick={() => setIsOpen(!isOpen)} 
+                        className="relative w-10 h-10 text-white focus:outline-none group"
+                        aria-label="Toggle mobile menu"
+                    >
+                        <div className="absolute inset-0 bg-white/10 rounded-lg group-hover:bg-white/20 transition-all duration-300"></div>
+                        <svg className={`w-6 h-6 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ${isOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}></path>
                         </svg>
                     </button>
                 </div>
             </div>
 
-            {/* Mobile Menu */}
-            <div className={`fixed top-0 right-0 h-full bg-white text-black w-64 transform ${isOpen ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 ease-in-out md:hidden shadow-lg`}>
-                <button onClick={() => setIsOpen(false)} className="p-4 focus:outline-none">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
-                    </svg>
-                </button>
-                <a href="/about" className="block text-black hover:text-green-600 py-2 px-4 transition-all ease-out duration-200 bg-green-300 text-center">About</a>
-                <a href="/contact" className="block text-black hover:text-green-600 py-2 px-4 transition-all ease-out duration-200 bg-green-300 text-center">Contact</a>
-                <a href="/faq" className="block text-black hover:text-green-600 py-2 px-4 transition-all ease-out duration-200 bg-green-300 text-center">FAQ</a>
-                <a href="/dashboard" className="block text-black hover:text-green-600 py-2 px-4 transition-all ease-out duration-200 bg-green-300 text-center">Dashboard</a>
-                <button className="block w-full bg-white text-green-600 px-4 py-2 rounded hover:bg-gray-200 ">
-                    <a href="/sign-in"> Log In </a>
-                </button>
-                <button className="block w-full bg-white text-green-600 px-4 py-2 rounded hover:bg-gray-200 ">
-                    <a href="/sign-up"> Sign Up </a>
-                </button>
-                <div className="block px-4 bg-green-900">
-                    <ThemeToggle />
+            {/* Enhanced Mobile Menu */}
+            <div className={`fixed top-0 right-0 h-full w-80 transform ${isOpen ? "translate-x-0" : "translate-x-full"} transition-all duration-500 ease-in-out md:hidden z-50`}>
+                <div className="h-full bg-gradient-to-br from-gray-900/95 via-gray-800/95 to-gray-900/95 backdrop-blur-xl border-l border-white/10 shadow-2xl">
+                    {/* Mobile Menu Header */}
+                    <div className="flex justify-between items-center p-6 border-b border-white/10">
+                        <div className="flex items-center">
+                            <FaLeaf className="text-green-400 text-2xl mr-2" />
+                            <span className="text-white text-xl font-bold">FarmRuler</span>
+                        </div>
+                        <button 
+                            onClick={() => setIsOpen(false)} 
+                            className="w-8 h-8 text-white/80 hover:text-white hover:bg-white/10 rounded-lg transition-all duration-300 flex items-center justify-center"
+                            aria-label="Close mobile menu"
+                        >
+                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    {/* Mobile Menu Content */}
+                    <div className="p-6 space-y-6">
+                        {/* Navigation Links */}
+                        <div className="space-y-4">
+                            <a href="/dashboard" className="block text-white text-lg font-semibold py-3 px-4 rounded-xl hover:bg-white/10 transition-all duration-300 border-l-4 border-transparent hover:border-green-400">
+                                Dashboard
+                            </a>
+                            <a href="/about" className="block text-white/90 text-lg py-3 px-4 rounded-xl hover:bg-white/10 hover:text-white transition-all duration-300 border-l-4 border-transparent hover:border-green-400">
+                                About
+                            </a>
+                            <a href="/contact" className="block text-white/90 text-lg py-3 px-4 rounded-xl hover:bg-white/10 hover:text-white transition-all duration-300 border-l-4 border-transparent hover:border-green-400">
+                                Contact
+                            </a>
+                            <a href="/faq" className="block text-white/90 text-lg py-3 px-4 rounded-xl hover:bg-white/10 hover:text-white transition-all duration-300 border-l-4 border-transparent hover:border-green-400">
+                                FAQ
+                            </a>
+                        </div>
+
+                        {/* Auth Buttons */}
+                        <div className="space-y-4 pt-6 border-t border-white/10">
+                            <a href="/sign-up" className="block w-full text-center py-3 px-6 bg-gradient-to-r from-green-500 to-emerald-500 text-white font-semibold rounded-xl hover:from-green-400 hover:to-emerald-400 transition-all duration-300 shadow-lg shadow-green-500/25">
+                                Sign Up
+                            </a>
+                        </div>
+
+                        {/* Theme Toggle */}
+                        <div className="pt-6 border-t border-white/10 flex justify-center">
+                            <ThemeToggle />
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            {/* Mobile Menu Overlay */}
+            {isOpen && (
+                <div 
+                    className="fixed inset-0 bg-black/50 backdrop-blur-sm md:hidden z-40"
+                    onClick={() => setIsOpen(false)}
+                ></div>
+            )}
         </nav>
     );
 };

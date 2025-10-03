@@ -139,6 +139,33 @@ export default function SignUp() {
                             </button>
                         </div>
                     </form>
+                    
+                    {/* Sign In Link Section */}
+                    <div className="mt-6 text-center">
+                        <div className="relative">
+                            <div className="absolute inset-0 flex items-center">
+                                <div className="w-full border-t border-gray-300 dark:border-gray-600"></div>
+                            </div>
+                            <div className="relative flex justify-center text-sm">
+                                <span className="px-2 bg-white dark:bg-gray-900 text-gray-500 dark:text-gray-400">
+                                    Already have an account?
+                                </span>
+                            </div>
+                        </div>
+                        <div className="mt-4">
+                            <a
+                                href="/sign-in"
+                                className="group relative w-full flex justify-center py-3 px-4 border-2 border-green-600 text-sm font-semibold rounded-lg text-green-600 bg-transparent hover:bg-green-600 hover:text-white transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                            >
+                                <span className="flex items-center space-x-2">
+                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"></path>
+                                    </svg>
+                                    <span>Sign In to Your Account</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </main>
             <Footer />
