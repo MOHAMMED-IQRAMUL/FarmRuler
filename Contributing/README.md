@@ -40,6 +40,13 @@ Welcome to the FarmRuler project! We appreciate your contributions. Please add y
 
 ## Contributors List
 
+### <img src="https://github.com/SumitThakur1600.png" width="100" height="100" style="border-radius: 50%;">
+**Name:** [Sumit Thakur](https://github.com/SumitThakur1600)
+
+- **GitHub:** [GitHub Profile](https://github.com/SumitThakur1600)
+- **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/sumit-thakurr3/)
+- **Info:** Enthusiastic about web development, including frontend and backend technologies, open-source contributions, and competitive programming.
+
 ### <img src="https://avatars.githubusercontent.com/u/151747267?v=4" width="100" height="100" style="border-radius: 50%;">
 **Name:** [Arpit Srivastava](https://www.github.com/arpit529srivastava)
 

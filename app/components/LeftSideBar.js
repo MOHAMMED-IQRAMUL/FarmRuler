@@ -43,12 +43,12 @@ const LeftSideBar = () => {
       maxConstraints={[600, Infinity]}
       axis="x"
       resizeHandles={["e"]}
-      className="overflow-auto w-[30%] min-w-[10%] border-r-2 border-gray-200"
+      className="overflow-hidden w-[300px] border-r-2 border-gray-200 mt-32 shadow-lg rounded-lg "
     >
       <div className="  pl-5 m-0 left w-full h-full">
 
 
-      <h1 className="text-2xl text-center py-2 font-semibold text-gray-800">Menu</h1>
+      <h1 className="text-2xl text-center py-4 font-bold sm:text-3xl mb-4">Menu</h1>
 
       {/* <ul className="space-y-4">
         {NavItems.map((item, index) => (
@@ -70,29 +70,31 @@ const LeftSideBar = () => {
         ))}
       </ul> */}
 
-      <h2 className="text-2xl font-bold mb-4">Navigation</h2>
+      <h2 className="text-xl font-bold mb-4 sm:text-2xl">Navigation</h2>
                     <ul>
                         {NavItems.map((item) => (
                             <li key={item.name} className="mb-2">
-                                <a href={item.url} className="flex items-center text-gray-500 font-light hover:underline">
+                                <a href={item.url} className="flex items-center text-gray-500 font-light hover:underline text-md sm:text-xl">
                                     <item.icon className="h-5 w-5 mr-2" />
                                     {item.name}
                                 </a>
                             </li>
                         ))}
                     </ul>
-                    <h2 className="text-2xl font-bold mt-8 mb-4">External Links</h2>
+                    <h2 className="text-xl font-bold mt-8 mb-4 sm:text-2xl">External Links</h2>
                     <ul>
                         {NavItemsExt.map((item) => (
                             <li key={item.name} className="mb-2">
-                                <a href={item.url} className="flex items-center hover:underline text-gray-500 font-light">
+                                <a href={item.url} className="flex items-center hover:underline text-gray-500 font-light text-md sm:text-xl">
                                     <item.icon className="h-5 w-5 mr-2" />
                                     {item.name}
                                 </a>
                             </li>
                         ))}
                     </ul>
+                    <div className="mt-6"></div>
       </div>
+      
     </ResizableBox>
   );
 };

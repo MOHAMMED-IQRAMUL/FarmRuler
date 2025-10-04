@@ -1,5 +1,6 @@
 # FarmRuler
 
+
 ## Collaborate, Code, and Conquer—Let’s Build Something Amazing Together!
 
 Welcome to **FarmRuler**! We're on a mission to build an Incredible Full-Stack Web Application Specially For Person With Interst in Agriculture and Farming. 
